@@ -30,6 +30,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 10;
     .logo {
         font-weight: 900;
     }
@@ -52,7 +53,7 @@ header {
 }
 #hero {
     background-color: $secondary-color;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     column-gap: 50px;
     grid-template-columns: 1fr 1fr;
@@ -150,6 +151,157 @@ header {
             padding: 25px 20px;
             font-size: 24px;
             color: $gray-color;
+        }
+    }
+}
+
+#courseStructure {
+    margin: 100px 10%;
+    .title {
+        color: $primary-color;
+        padding: 0 50px 5px 0;
+        border-bottom: 5px solid $primary-color;
+        display: inline-block;
+        font-size: 32px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 50px auto;
+        row-gap: 20px;
+        max-width: 768px;
+        .card.imager {
+            position: relative;
+            img {
+                width: 50%;
+                height: 50%;
+                display: block;
+                position: absolute;
+                bottom: -20px;
+            }
+        }
+        .card.imagel {
+            position: relative;
+            img {
+                width: 50%;
+                height: 50%;
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: -20px;
+            }
+        }
+        .card.text {
+            display: flex;
+            background-color: $secondary-color;
+            border: 1px solid $primary-color;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+            h2 {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+            }
+        }
+    }
+}
+
+#instructors {
+    padding: 50px 10%;
+    background-color: $secondary-color;
+    .title {
+        color: $primary-color;
+        padding: 0 50px 5px 0;
+        border-bottom: 5px solid $primary-color;
+        display: inline-block;
+        font-size: 32px;
+    }
+    .cards {
+        margin: 50px 0;
+        .card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            border-bottom: 2px solid $primary-color;
+            padding: 20px 0;
+            .basic {
+                h1 {
+                    font-size: 18px;
+                }
+                h3 {
+                    font-size: 14px;
+                    color: $gray-color;
+                    font-weight: 500;
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#register {
+    margin: 100px 10%;
+    .title {
+        color: $primary-color;
+        padding: 0 50px 5px 0;
+        border-bottom: 5px solid $primary-color;
+        display: inline-block;
+        font-size: 32px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 768px;
+        margin: 50px auto;
+        gap: 20px;
+        .card.imager {
+            position: relative;
+            img {
+                width: 50%;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                height: 50%;
+            }
+        }
+        .card.imagel {
+            position: relative;
+            img {
+                width: 50%;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                height: 50%;
+            }
+        }
+        .card.text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+            gap: 20px;
+            border-radius: 10px;
+            border: 1px solid $primary-color;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            .text {
+                h1 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
+            img {
+                width: 50px;
+                padding: 10px;
+                border: 2px dashed $primary-color;
+                border-radius: 100%;
+            }
         }
     }
 }
