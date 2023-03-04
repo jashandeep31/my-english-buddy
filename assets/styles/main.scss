@@ -305,3 +305,59 @@ header {
         }
     }
 }
+#FAQ {
+    margin: 100px 10%;
+    .title {
+        color: $primary-color;
+        padding: 0 50px 5px 0;
+        border-bottom: 5px solid $primary-color;
+        display: inline-block;
+        font-size: 32px;
+    }
+    .cards {
+        margin: 50px 0 0 0;
+        .card {
+            border-bottom: 2px solid $primary-color;
+            padding: 20px 0;
+
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                margin: 10px 0;
+                font-size: 13px;
+            }
+        }
+    }
+}
+footer {
+    background-color: $secondary-color;
+    .top {
+        padding: 20px 10%;
+        border-bottom: 1px solid $primary-color;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 10%;
+        h6 {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .links {
+            ul {
+                margin: 20px 0;
+                list-style: none;
+                li {
+                    margin: 5px 5px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .bottom {
+        text-align: center;
+        padding: 20px 10%;
+        border-top: 1px solid $primary-color;
+    }
+}
