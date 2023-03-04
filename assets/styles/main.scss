@@ -17,7 +17,9 @@ a {
 img {
     width: 100%;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -51,7 +53,7 @@ header {
         }
     }
 }
-#hero {
+#home {
     background-color: $secondary-color;
     min-height: 100vh;
     display: grid;
@@ -363,7 +365,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    #hero {
+    #home {
         background-color: $secondary-color;
         min-height: 100vh;
         display: grid;
@@ -467,7 +469,7 @@ footer {
     }
 
     #courseStructure {
-        margin: 100px 20px;
+        margin: 50px 20px;
         .title {
             color: $primary-color;
             padding: 0 25px 5px 0;
