@@ -344,4 +344,306 @@ footer .bottom {
   text-align: center;
   padding: 20px 10%;
   border-top: 1px solid #25d366;
+}
+
+@media screen and (max-width: 768px) {
+  #hero {
+    background-color: #fcf5eb;
+    min-height: 100vh;
+    display: grid;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+    align-items: center;
+  }
+  #hero .text-area {
+    order: 2;
+  }
+  #hero .text-area p {
+    font-size: 13px;
+  }
+  #hero .text-area h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #25d366;
+  }
+  #hero .text-area h3 {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 25px 0 50px 0;
+    color: #777777;
+  }
+  #hero .text-area .button-container a {
+    background-color: #25d366;
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+  }
+  #hero .image-area img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  #aboutUs {
+    margin: 50px 20px;
+  }
+  #aboutUs h1.title {
+    color: #25d366;
+    padding: 0 25px 5px 0;
+    border-bottom: 5px solid #25d366;
+    display: inline-block;
+    font-size: 24px;
+  }
+  #aboutUs .main-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 25px 0 0 0;
+  }
+  #aboutUs .main-about .image-area {
+    display: none;
+  }
+  #aboutUs .main-about .text-area p {
+    font-size: 18px;
+    text-align: center;
+  }
+  #reviews {
+    margin: 50px 20px;
+  }
+  #reviews .swiper-controls {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+  }
+  #reviews .swiper-controls span {
+    padding: 0px;
+    border: 1px solid #25d366;
+    border-radius: 100px;
+    font-size: 24px;
+    color: #25d366;
+  }
+  #reviews .swiper {
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #25d366;
+  }
+  #reviews .swiper-slide {
+    background: #fff;
+  }
+  #reviews .swiper-slide h1 {
+    border-bottom: 3px solid #25d366;
+    padding: 25px 20px;
+    font-size: 16px;
+  }
+  #reviews .swiper-slide p {
+    padding: 25px 20px;
+    font-size: 18px;
+    color: #777777;
+  }
+  #courseStructure {
+    margin: 100px 20px;
+  }
+  #courseStructure .title {
+    color: #25d366;
+    padding: 0 25px 5px 0;
+    border-bottom: 5px solid #25d366;
+    display: inline-block;
+    font-size: 24px;
+  }
+  #courseStructure .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px auto;
+    row-gap: 20px;
+    max-width: 768px;
+  }
+  #courseStructure .cards .card.imager {
+    display: none;
+    position: relative;
+  }
+  #courseStructure .cards .card.imager img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+  }
+  #courseStructure .cards .card.imagel {
+    display: none;
+    position: relative;
+  }
+  #courseStructure .cards .card.imagel img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+  }
+  #courseStructure .cards .card.text {
+    display: flex;
+    background-color: #fcf5eb;
+    border: 1px solid #25d366;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+  }
+  #courseStructure .cards .card.text h2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  #instructors {
+    padding: 50px 20px;
+    background-color: #fcf5eb;
+  }
+  #instructors .title {
+    color: #25d366;
+    padding: 0 25px 5px 0;
+    border-bottom: 5px solid #25d366;
+    display: inline-block;
+    font-size: 24px;
+  }
+  #instructors .cards {
+    margin: 25px 0;
+  }
+  #instructors .cards .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-bottom: 2px solid #25d366;
+    padding: 20px 0;
+  }
+  #instructors .cards .card .basic h1 {
+    font-size: 18px;
+  }
+  #instructors .cards .card .basic h3 {
+    font-size: 14px;
+    color: #777777;
+    font-weight: 500;
+  }
+  #instructors .cards .card .basic h3 span {
+    font-weight: 700;
+  }
+  #register {
+    margin: 100px 20px;
+  }
+  #register .title {
+    color: #25d366;
+    padding: 0 25px 5px 0;
+    border-bottom: 5px solid #25d366;
+    display: inline-block;
+    font-size: 24px;
+  }
+  #register .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 768px;
+    margin: 50px auto;
+    gap: 20px;
+  }
+  #register .cards .card.imager {
+    display: none;
+    position: relative;
+  }
+  #register .cards .card.imager img {
+    width: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 50%;
+  }
+  #register .cards .card.imagel {
+    display: none;
+    position: relative;
+  }
+  #register .cards .card.imagel img {
+    width: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 50%;
+  }
+  #register .cards .card.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #25d366;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  #register .cards .card.text .text h1 {
+    font-size: 16px;
+  }
+  #register .cards .card.text .text p {
+    font-size: 13px;
+  }
+  #register .cards .card.text img {
+    width: 50px;
+    padding: 10px;
+    border: 2px dashed #25d366;
+    border-radius: 100%;
+  }
+  #FAQ {
+    margin: 100px 20px;
+  }
+  #FAQ .title {
+    color: #25d366;
+    padding: 0 25px 5px 0;
+    border-bottom: 5px solid #25d366;
+    display: inline-block;
+    font-size: 24px;
+  }
+  #FAQ .cards {
+    margin: 25px 0 0 0;
+  }
+  #FAQ .cards .card {
+    border-bottom: 2px solid #25d366;
+    padding: 20px 0;
+  }
+  #FAQ .cards .card h2 {
+    font-size: 16px;
+  }
+  #FAQ .cards .card p {
+    margin: 10px 0;
+    font-size: 13px;
+  }
+  footer {
+    background-color: #fcf5eb;
+  }
+  footer .top {
+    padding: 20px 20px;
+    border-bottom: 1px solid #25d366;
+  }
+  footer .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 25px 20px;
+  }
+  footer .main h6 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  footer .main .links ul {
+    list-style: none;
+  }
+  footer .main .links ul li {
+    margin: 5px 5px;
+    font-size: 13px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer .bottom {
+    text-align: center;
+    padding: 20px 20px;
+    border-top: 1px solid #25d366;
+  }
 }/*# sourceMappingURL=main.css.map */
