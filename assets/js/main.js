@@ -26,7 +26,7 @@ const linkActivator = () => {
         }
     });
     if (!found) {
-        document.querySelector(`.home`).classList.add("active");
+        document.querySelector(`.homeLink`).classList.add("active");
     }
 };
 window.addEventListener("hashchange", function () {
