@@ -34,7 +34,9 @@ header {
     top: 0;
     z-index: 10;
     .logo {
-        font-weight: 900;
+        img {
+            height: 30px;
+        }
     }
     .desktop-links {
         ul {
@@ -344,6 +346,10 @@ footer {
     .top {
         padding: 20px 10%;
         border-bottom: 1px solid $primary-color;
+        img {
+            height: 30px;
+            width: auto;
+        }
     }
     .main {
         display: grid;
