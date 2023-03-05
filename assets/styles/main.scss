@@ -202,10 +202,15 @@ header {
             justify-content: center;
             min-height: 200px;
             h2 {
+                font-weight: bold;
+                color: $primary-color;
                 text-align: center;
                 display: flex;
                 align-items: center;
                 column-gap: 20px;
+                i {
+                    font-size: 32px;
+                }
             }
         }
     }
@@ -293,6 +298,8 @@ header {
             .text {
                 h1 {
                     font-size: 16px;
+                    color: $primary-color;
+                    font-weight: bold;
                 }
                 p {
                     font-size: 13px;

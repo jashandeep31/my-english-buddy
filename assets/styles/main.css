@@ -195,11 +195,16 @@ header .desktop-links ul li a.active {
   min-height: 200px;
 }
 #courseStructure .cards .card.text h2 {
+  font-weight: bold;
+  color: #25d366;
   text-align: center;
   display: flex;
   align-items: center;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+#courseStructure .cards .card.text h2 i {
+  font-size: 32px;
 }
 
 #instructors {
@@ -284,6 +289,8 @@ header .desktop-links ul li a.active {
 }
 #register .cards .card.text .text h1 {
   font-size: 16px;
+  color: #25d366;
+  font-weight: bold;
 }
 #register .cards .card.text .text p {
   font-size: 13px;
