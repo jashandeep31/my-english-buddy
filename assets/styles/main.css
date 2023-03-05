@@ -23,33 +23,45 @@ body {
 }
 
 header {
-  display: flex;
+  background-color: #fcf5eb;
   padding: 20px 10%;
   width: 100%;
-  justify-content: space-between;
-  background-color: #fcf5eb;
-  align-items: center;
   position: fixed;
   top: 0;
   z-index: 10;
 }
-header .logo img {
+header .navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar-wrapper .logo img {
   height: 30px;
 }
-header .desktop-links ul {
+header .navbar-wrapper .desktop-links ul {
   list-style: none;
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-header .desktop-links ul li a {
+header .navbar-wrapper .desktop-links ul li a {
   font-weight: 500;
   color: #777777;
 }
-header .desktop-links ul li a.active {
+header .navbar-wrapper .desktop-links ul li a.active {
   color: #000000;
   font-weight: 800;
   text-decoration: underline;
+}
+header .mobile-menu {
+  display: none;
+  padding: 20px 0px;
+}
+header .mobile-menu ul li {
+  padding: 10px 0;
+}
+header .mobile-menu.active {
+  display: block;
 }
 
 #home {

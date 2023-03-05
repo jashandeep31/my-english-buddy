@@ -1,10 +1,32 @@
 const Header = document.querySelector("header");
 const Hero = document.querySelector("#home");
+const MenuButton = document.querySelector(".navbar-toggler");
+const MobileMenu = document.querySelector(".mobile-menu");
 const InnerWidth = window.innerWidth;
 const InnerHeight = window.innerHeight;
 const currentURL = window.location;
 let commentsNumber = 1;
 let added = false;
+
+let navbarState = false;
+const closeNavbar = () => {
+    MobileMenu.classList.remove("active");
+    navbarState = false;
+    MenuButton.innerHTML = ` <i class="bx bx-menu text-xl"></i>`;
+};
+
+const ToggelNavbarState = () => {
+    MobileMenu.classList.toggle("active");
+    navbarState = !navbarState;
+    if (navbarState) {
+        MenuButton.innerHTML = `  <i class="bx bx-x text-xl"></i>`;
+    } else {
+        MenuButton.innerHTML = ` <i class="bx bx-menu text-xl"></i>`;
+    }
+};
+MenuButton.addEventListener("click", function () {
+    ToggelNavbarState();
+});
 
 const linksClasses = [
     { homeLink: "home" },
@@ -31,6 +53,7 @@ const linkActivator = () => {
 };
 window.addEventListener("hashchange", function () {
     linkActivator();
+    closeNavbar();
 });
 
 window.onload = function () {

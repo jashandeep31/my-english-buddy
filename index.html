@@ -22,10 +22,46 @@
 
     <body>
         <header>
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="logo" />
+            <div class="navbar-wrapper">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="./assets/images/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <div class="desktop-links hidden md:hidden lg:block">
+                    <ul>
+                        <li>
+                            <a class="homeLink" class="active" href="#home"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a class="aboutLink" href="#aboutUs">About Us</a>
+                        </li>
+                        <li>
+                            <a
+                                class="courseStrutureLink"
+                                href="#courseStructure"
+                                >Course Structure
+                            </a>
+                        </li>
+                        <li>
+                            <a class="faqLink" href="#FAQ">FAQ's </a>
+                        </li>
+                        <li>
+                            <a
+                                class="contactLink"
+                                href="https://wa.me/919789151053?text=Hi%2C"
+                                >Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="md:hidden navbar-toggler">
+                    <i class="bx bx-menu text-xl"></i>
+                </button>
             </div>
-            <div class="desktop-links hidden md:hidden lg:block">
+            <div class="mobile-menu">
                 <ul>
                     <li>
                         <a class="homeLink" class="active" href="#home">Home</a>
@@ -42,7 +78,11 @@
                         <a class="faqLink" href="#FAQ">FAQ's </a>
                     </li>
                     <li>
-                        <a class="contactLink" href="#">Contact Us </a>
+                        <a
+                            class="contactLink"
+                            href="https://wa.me/919789151053?text=Hi%2C"
+                            >Contact Us
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +98,10 @@
                     confidence and enhance your skills.
                 </h3>
                 <div class="button-container">
-                    <a href="">Join Now</a>
+                    <a
+                        href="https://wa.me/919789151053?text=Hello%2C%0A%0AI'm%20here%20to%20inquire%20about%20the%20availability%20of%20seats%20in%20your%20English%20course%20listed%20on%20your%20website.%20Could%20you%20please%20provide%20me%20with%20more%20information%20regarding%20this%20course%3F%20Thank%20you."
+                        >Join Now</a
+                    >
                 </div>
             </div>
             <div class="image-area">
@@ -422,21 +465,54 @@
                             <a class="faqLink" href="#FAQ">FAQ's </a>
                         </li>
                         <li>
-                            <a class="contactLink" href="#">Contact Us </a>
+                            <a
+                                class="contactLink"
+                                href="https://wa.me/919789151053?text=Hi%2C"
+                                >Contact Us
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="contactus">
                     <h6>Contact Us:</h6>
                     <p>
-                        Reach us through +91 73393 88794 or you can also email
-                        us at myemail@email.com for kind of issue you can visit
-                        our FAQ
+                        To get in touch with us, you can reach us by messaging
+                        us on WhatsApp at
+                        <a
+                            class="underline text-blue-500"
+                            href="https://wa.me/919789151053?text=Hi%2C"
+                            >+91 97891 51054</a
+                        >. Alternatively, you can also send an email to
+                        <a
+                            class="underline text-blue-500"
+                            href="mailto:myenglishbuddy.in@gmail.com"
+                            >myenglishbuddy.in@gmail.com</a
+                        >. For any queries or concerns, please refer to our FAQ
+                        section.
                     </p>
+                    <h5 class="font-bold mt-6">For updated Follow us at:</h5>
+                    <div class="flex gap-2">
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100090977703055&mibextid=LQQJ4d"
+                            ><i class="text-xl bx bxl-facebook"></i
+                        ></a>
+                        <a
+                            href="https://instagram.com/myenglishbuddy_in?igshid=YmMyMTA2M2Y="
+                            ><i class="text-xl bx bxl-instagram"></i
+                        ></a>
+                    </div>
                 </div>
             </div>
             <div class="bottom">
-                <p>© 2023 My English Buddy. All rights reserved.</p>
+                <p>
+                    © 2023 My English Buddy and
+                    <a
+                        class="underline text-blue-500"
+                        href="https://www.deepdevelopers.in/"
+                        >Deep Developers.</a
+                    >
+                    All rights reserved.
+                </p>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

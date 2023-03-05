@@ -24,35 +24,49 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 header {
-    display: flex;
+    background-color: $secondary-color;
     padding: 20px 10%;
     width: 100%;
-    justify-content: space-between;
-    background-color: $secondary-color;
-    align-items: center;
     position: fixed;
     top: 0;
     z-index: 10;
-    .logo {
-        img {
-            height: 30px;
+    .navbar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            img {
+                height: 30px;
+            }
+        }
+        .desktop-links {
+            ul {
+                list-style: none;
+                display: flex;
+                column-gap: 30px;
+                li a {
+                    font-weight: 500;
+                    color: $gray-color;
+                }
+                li a.active {
+                    color: $pure-black;
+                    font-weight: 800;
+                    text-decoration: underline;
+                }
+            }
         }
     }
-    .desktop-links {
+    .mobile-menu {
+        display: none;
+        padding: 20px 0px;
         ul {
-            list-style: none;
-            display: flex;
-            column-gap: 30px;
-            li a {
-                font-weight: 500;
-                color: $gray-color;
-            }
-            li a.active {
-                color: $pure-black;
-                font-weight: 800;
-                text-decoration: underline;
+            li {
+                padding: 10px 0;
             }
         }
+    }
+    .mobile-menu.active {
+        display: block;
     }
 }
 #home {
